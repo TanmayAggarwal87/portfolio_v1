@@ -1,35 +1,12 @@
 export function JourneyContent() {
   const journey = [
     {
-      year: "2024",
-      role: "Senior Frontend Developer",
-      company: "TechCorp Inc.",
-      description: "Leading a team of 5 developers, architecting scalable React applications"
+      year: "2025",
+      role: "Open Source Contributor",
+      company: "Social Winter of Code.",
+      description: "Contributing to many repositories handling both backend and frontend errors"
     },
-    {
-      year: "2022",
-      role: "Full Stack Developer",
-      company: "StartupXYZ",
-      description: "Built MVP from scratch using React, Node.js, and PostgreSQL"
-    },
-    {
-      year: "2020",
-      role: "Frontend Developer",
-      company: "Digital Agency",
-      description: "Developed responsive websites and web applications for various clients"
-    },
-    {
-      year: "2019",
-      role: "Junior Developer",
-      company: "Local Software Company",
-      description: "Started my professional journey, learned best practices and modern development workflows"
-    },
-    {
-      year: "2018",
-      role: "Computer Science Graduate",
-      company: "University",
-      description: "Graduated with honors, specialized in software engineering and web technologies"
-    }
+    
   ];
 
   return (

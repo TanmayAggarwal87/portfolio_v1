@@ -1,35 +1,34 @@
 export function SkillsContent() {
   const skills = {
     frontend: {
-      frameworks: ["React", "Next.js", "Vue.js", "Angular"],
+      frameworks: ["React", "Next.js"],
       languages: ["TypeScript", "JavaScript", "HTML5", "CSS3"],
       styling: ["Tailwind CSS", "Styled Components", "SASS", "CSS Modules"],
       tools: ["Webpack", "Vite", "ESLint", "Prettier"]
     },
     backend: {
-      languages: ["Node.js", "Python", "Java"],
-      frameworks: ["Express.js", "FastAPI", "Spring Boot"],
-      databases: ["PostgreSQL", "MongoDB", "Redis"],
-      cloud: ["AWS", "Google Cloud", "Docker", "Kubernetes"]
+      languages: ["Node.js", "Python"],
+      frameworks: ["Express.js", "FastAPI"],
+      databases: ["PostgreSQL", "MongoDB"],
+      cloud: ["AWS", "Google Cloud", "Docker"]
     },
     mobile: {
-      frameworks: ["React Native", "Flutter"],
+      frameworks: ["React Native","Swift"],
       platforms: ["iOS", "Android"],
       tools: ["Expo", "Xcode", "Android Studio"]
     },
     other: {
-      design: ["Figma", "Adobe XD", "Sketch"],
+      design: ["Figma"],
       version_control: ["Git", "GitHub", "GitLab"],
-      testing: ["Jest", "Cypress", "Testing Library"],
-      methodologies: ["Agile", "Scrum", "TDD"]
+
     }
   };
 
   const proficiencyLevels = {
-    expert: ["React", "TypeScript", "JavaScript", "Node.js", "CSS3", "Git"],
-    advanced: ["Next.js", "Python", "PostgreSQL", "AWS", "Jest"],
-    intermediate: ["Vue.js", "MongoDB", "Docker", "React Native"],
-    learning: ["Kubernetes", "Flutter", "Spring Boot"]
+    expert: ["React", "TypeScript", "JavaScript","React Native", "Node.js", "CSS3", "Git"],
+    advanced: ["Next.js", "Python","MongoDB"],
+    intermediate: ["Docker", "PostgreSQL", "AWS"],
+    learning: []
   };
 
   return (

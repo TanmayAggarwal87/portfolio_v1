@@ -4,30 +4,30 @@ export function ProjectsContent() {
   const projects = [
     {
       id: 1,
-      name: "E-Commerce Platform",
-      description: "Full-stack React application with TypeScript and Node.js backend",
-      tech: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+      name: "Nexis",
+      description: "Full-stack Web & Mobile App for P2P file sharing",
+      tech: ["React", "TypeScript","Javascript", "Node.js","Socket.io","React-Native"],
       image: "https://images.unsplash.com/photo-1565687981296-535f09db714e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NTg3OTU4ODl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      github: "https://github.com",
-      demo: "https://demo.com"
+      github: "https://github.com/TanmayAggarwal87/Nexis",
+      demo: "https://nexis-share.netlify.app"
     },
     {
       id: 2,
-      name: "Task Management App",
-      description: "React Native mobile app with real-time collaboration features",
-      tech: ["React Native", "Firebase", "Redux", "TypeScript"],
+      name: "LumaLife",
+      description: "AI-powered lifestyle coaching app that analyzes Health Connect data to give personalized wellness insights.",
+      tech: ["React Native", "Node.js", "Expo", "TypeScript"],
       image: "https://images.unsplash.com/photo-1699885960867-56d5f5262d38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFjdCUyMHR5cGVzY3JpcHQlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NTg4Mjg0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      github: "https://github.com",
+      github: "https://github.com/TanmayAggarwal87/LumaLife",
       demo: "https://demo.com"
     },
     {
       id: 3,
-      name: "Design System",
-      description: "Comprehensive UI component library built with Storybook",
-      tech: ["React", "Storybook", "Tailwind CSS", "TypeScript"],
+      name: "Docify",
+      description: "Ai powered professional README maker for Github",
+      tech: ["Next.js", "Tailwind CSS", "TypeScript","Gemini Api","Shadcn"],
       image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjB1aXxlbnwxfHx8fDE3NTg4Mjg0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      github: "https://github.com",
-      demo: "https://demo.com"
+      github: "https://github.com/TanmayAggarwal87/docify",
+      demo: "https://docify-two.vercel.app/"
     }
   ];
 
@@ -35,7 +35,7 @@ export function ProjectsContent() {
     <div className="space-y-6">
       {/* Code-style comment */}
       <div className="text-green-600 dark:text-green-400">
-        // My featured projects - built with modern web technologies
+        // My featured projects - built with modern technologies
       </div>
 
       {/* Projects array representation */}
@@ -71,14 +71,11 @@ export function ProjectsContent() {
               </div>
               
               {/* Project image */}
-              <div className="ml-4 my-3 text-xl">
-                Project Image
-              </div>
-
               {/* Action buttons */}
               <div className="ml-4 flex space-x-3 mt-3">
                 <a
                   href={project.github}
+                  target='_blank'
                   className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:underline"
                 >
                   <Github className="w-4 h-4" />
@@ -86,6 +83,7 @@ export function ProjectsContent() {
                 </a>
                 <a
                   href={project.demo}
+                  target='_blank'
                   className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:underline"
                 >
                   <ExternalLink className="w-4 h-4" />
@@ -103,7 +101,12 @@ export function ProjectsContent() {
         <div>
           <span className="text-yellow-600 dark:text-yellow-400">];</span>
         </div>
+
+        <div className="text-green-600 dark:text-green-400">
+          // View More at :- <span  ><a target='_blank' className='hover:text-blue-600' href='https://github.com/TanmayAggarwal87'>My Github</a></span> 
+        </div>
       </div>
+      
     </div>
   );
 }

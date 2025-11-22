@@ -3,10 +3,9 @@ import { Code, Coffee, Heart, Zap } from 'lucide-react';
 
 export function AboutContent() {
   const stats = [
-    { label: "Years of Experience", value: "5+", icon: Code },
-    { label: "Projects Completed", value: "50+", icon: Zap },
-    { label: "Cups of Coffee", value: "2,847", icon: Coffee },
-    { label: "Happy Clients", value: "25+", icon: Heart },
+    { label: "Years of Experience", value: "0+", icon: Code },
+    { label: "Projects Completed", value: "10+", icon: Zap },
+    { label: "Cups of Coffee & Red Bull", value: "2,847", icon: Coffee },
   ];
 
   const technologies = [
@@ -43,22 +42,27 @@ export function AboutContent() {
               <div>
                 <span className="text-blue-600 dark:text-blue-400">this</span>.
                 <span className="text-red-600 dark:text-red-400">name</span> = 
-                <span className="text-green-600 dark:text-green-400"> "Your Name"</span>;
+                <span className="text-green-600 dark:text-green-400"> "Tanmay Aggarwal"</span>;
               </div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400">this</span>.
                 <span className="text-red-600 dark:text-red-400">role</span> = 
-                <span className="text-green-600 dark:text-green-400"> "Senior Frontend Developer"</span>;
+                <span className="text-green-600 dark:text-green-400"> "Full Stack Developer"</span>;
               </div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400">this</span>.
                 <span className="text-red-600 dark:text-red-400">location</span> = 
-                <span className="text-green-600 dark:text-green-400"> "San Francisco, CA"</span>;
+                <span className="text-green-600 dark:text-green-400"> "Delhi, India"</span>;
               </div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400">this</span>.
                 <span className="text-red-600 dark:text-red-400">passion</span> = 
-                <span className="text-green-600 dark:text-green-400"> "Building amazing user experiences"</span>;
+                <span className="text-green-600 dark:text-green-400"> "Building stuff that actually works in the real world."</span>;
+              </div>
+              <div>
+                <span className="text-blue-600 dark:text-blue-400">this</span>.
+                <span className="text-red-600 dark:text-red-400">education</span> = 
+                <span className="text-green-600 dark:text-green-400"> "Student at Maharaja Agrasen Institute of Technology,Rohini,Delhi"</span>;
               </div>
             </div>
             <div>
@@ -69,9 +73,8 @@ export function AboutContent() {
           {/* Profile image */}
           <div className="my-6 flex justify-center">
             <div className="relative text-xl">
-              profile Image
+              <img src={"https://avatars.githubusercontent.com/u/175019491?v=4"} className="w-48 h-48 rounded-full object-cover border-4 border-primary/20"/>
               <div className="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-background flex items-center justify-center">
-                <span className="text-white text-xs">✓</span>
               </div>
             </div>
           </div>
@@ -85,15 +88,12 @@ export function AboutContent() {
             </div>
             <div className="ml-4">
               <span className="text-blue-600 dark:text-blue-400">return</span>{" "}
-              <span className="text-green-600 dark:text-green-400">`</span>
+              <span className="text-green-600 dark:text-green-400"><br/>`</span>
               <div className="ml-4 text-green-600 dark:text-green-400 leading-relaxed">
-                I'm a passionate full-stack developer with {technologies.length} years of experience <br />
-                crafting digital solutions that make a difference. I love turning <br />
-                complex problems into simple, beautiful, and intuitive designs. <br />
-                <br />
-                When I'm not coding, you'll find me exploring new technologies, <br />
-                contributing to open source projects, or enjoying a perfect cup <br />
-                of coffee while debugging the latest challenge.
+                I'm a full-stack developer with hands-on experience in web and mobile development.<br/>
+                Currently diving deeper into full-stack architectures,<br/>
+                advanced backend patterns, and building real-time, scalable applications<br/>
+                using Next.js, React Native, and modern backend stacks.
               </div>
               <span className="text-green-600 dark:text-green-400">`</span>;
             </div>
@@ -173,7 +173,7 @@ export function AboutContent() {
       <div className="mt-8 p-4 bg-muted/30 rounded-lg border border-border">
         <div className="text-green-600 dark:text-green-400 text-sm">
           // Fun fact: I believe the best code is not just functional, but also readable, <br />
-          // maintainable, and brings joy to both the developer and the user. 🚀
+          // maintainable, and brings joy to both the developer and the user. 
         </div>
       </div>
     </div>
